@@ -3,5 +3,7 @@ module.exports = {
     title: `SVGConverter`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-postcss'
+  ],
 }
