@@ -75,7 +75,7 @@ class IndexPage extends React.Component {
 
             <FormTextarea className="col-span-3" onSvgChange={this.handleSvgRawChange} label="SVG Raw Code"></FormTextarea>
 
-            <h2 className="col-span-3 text-xl text-blue-900 border-b-2 border-blue-900">Single-line with whitespace removed</h2>
+            <h2 className="col-span-3 text-xl text-blue-900 border-b-2 border-blue-900">Whitespace and newlines removed</h2>
             <DumbTextarea className="col-span-2" label="Single Line" content={this.state.svgRawCodeOneLine}>All newlines and tabs removed.</DumbTextarea>
             
             <h2 className="col-span-3 text-xl text-blue-900 border-b-2 border-blue-900">URL-Encoded</h2>
