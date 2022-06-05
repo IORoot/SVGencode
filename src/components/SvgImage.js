@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const SVG = ({ className, children }) => {
+const SvgImage = ({ className, children }) => {
 
     function stripquotes(a) {
         if (a.charAt(0) === '"' && a.charAt(a.length-1) === '"') {
@@ -21,4 +21,4 @@ const SVG = ({ className, children }) => {
 
 
 
-export default SVG
+export default SvgImage
