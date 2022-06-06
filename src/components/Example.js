@@ -6,8 +6,8 @@ const Example = ({ label, sublabel, image, className, children }) => {
 
     return (
         <div className={className}>
-            <DumbTextarea className="col-span-2" rows="6" label={label} content={children}>{sublabel}</DumbTextarea>
-            <InlineCssSvgImage className="col-span-1 h-32 checkered overflow-scroll rounded mt-10">{image}</InlineCssSvgImage>
+            <DumbTextarea className="col-span-2" rows="3" label={label} content={children}>{sublabel}</DumbTextarea>
+            <InlineCssSvgImage className="col-span-1 h-18 checkered overflow-scroll rounded mt-10">{image}</InlineCssSvgImage>
         </div>
     )
 

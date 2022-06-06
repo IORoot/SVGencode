@@ -10,3 +10,8 @@
     background-size: 20px 20px;
     background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 }
+
+.text-xxs {
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+}
