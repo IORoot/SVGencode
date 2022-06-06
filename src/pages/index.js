@@ -26,10 +26,6 @@ function prefixDataType(svg,type){
   return "data:image/svg+"+ type +"," + svg;
 }
 
-// function prefixURLSingleQuotes(svg){
-//   return "url('" + svg + "')";
-// }
-
 function prefixURLDoubleQuotes(svg){
   return "url(\"" + svg + "\")";
 }
