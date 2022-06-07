@@ -3,6 +3,7 @@ import DumbTextarea from "../components/DumbTextarea"
 import FormTextarea from "../components/FormTextarea"
 import SvgImage from '../components/SvgImage'
 import mixpanel from 'mixpanel-browser';
+import AdSense from 'react-adsense';
 
 mixpanel.init('951229746a9235dd49749d8f6490ac83', {debug: true, ignore_dnt: true})
 mixpanel.track('Weebsite Visit')
@@ -251,17 +252,14 @@ class IndexPage extends React.Component {
 
           </div>
 
-          <div className="w-fixed w-1/6 flex-shrink flex-grow-0 p-4 bg-slate-200">
-            {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6307098859694609" crossorigin="anonymous"></script> */}
-            {/* <ins className="adsbygoogle"
-                style={{display: 'block'}}
-                data-ad-format="fluid"
-                data-ad-layout-key="-6t+ed+2i-1n-4w"
-                data-ad-client="ca-pub-6307098859694609"
-                data-ad-slot="1800867293"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script> */}
+          <div className="w-fixed w-72 flex-shrink flex-grow-0 p-4 bg-slate-200" >
+            <AdSense.Google
+              client='ca-pub-6307098859694609'
+              slot='1800867293'
+              style={{ display: 'block' }}
+              layoutKey='-6t+ed+2i-1n-4w'
+              format='fluid'
+            />
           </div>
         </div>
 
