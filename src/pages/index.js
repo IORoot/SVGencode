@@ -152,7 +152,7 @@ class IndexPage extends React.Component {
 
           <div className="w-fixed w-1/6 flex-shrink flex-grow-0 p-4 bg-slate-100">
               <div className="sticky top-0 p-4 w-full h-full flex flex-col gap-8">
-                  <h1 className="">SVG Encode ⚙️</h1>
+                  <h1 className="">⚙️ SVG Encoder / Converter</h1>
 
                   <h2 className="text-sm">
                     A simple tool to convert an SVG into different formats, ready for use in CSS and HTML.
@@ -252,8 +252,7 @@ class IndexPage extends React.Component {
           </div>
 
           <div className="w-fixed w-1/6 flex-shrink flex-grow-0 p-4 bg-slate-200">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6307098859694609" crossorigin="anonymous"></script>
-            <ins class="adsbygoogle"
+            <ins className="adsbygoogle"
                 style={{display: 'block'}}
                 data-ad-format="fluid"
                 data-ad-layout-key="-6t+ed+2i-1n-4w"
