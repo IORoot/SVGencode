@@ -252,6 +252,7 @@ class IndexPage extends React.Component {
           </div>
 
           <div className="w-fixed w-1/6 flex-shrink flex-grow-0 p-4 bg-slate-200">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6307098859694609" crossorigin="anonymous"></script>
             <ins className="adsbygoogle"
                 style={{display: 'block'}}
                 data-ad-format="fluid"
