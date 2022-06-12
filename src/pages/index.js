@@ -3,7 +3,6 @@ import DumbTextarea from "../components/DumbTextarea"
 import FormTextarea from "../components/FormTextarea"
 import SvgImage from '../components/SvgImage'
 import mixpanel from 'mixpanel-browser';
-import AdSense from 'react-adsense';
 
 mixpanel.init('951229746a9235dd49749d8f6490ac83', {debug: true, ignore_dnt: true})
 mixpanel.track('Weebsite Visit')
@@ -252,14 +251,10 @@ class IndexPage extends React.Component {
 
           </div>
 
-          <div className="w-full lg:basis-72 grow shrink-0 p-4 bg-slate-200" >
-            <AdSense.Google
-                client='ca-pub-6307098859694609'
-                slot='1800867293'
-                style={{ display: 'block' }}
-                layoutKey='-6t+ed+2i-1n-4w'
-                format='fluid'
-              />
+          <div className="w-1/6 grow shrink-0 p-4 bg-slate-200 flex flex-col gap-4" >
+            <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style={{width: '120px', height: '240px'}} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=londonparkour-21&language=en_GB&marketplace=amazon&region=GB&placement=B08GTYFC37&asins=B08GTYFC37&linkId=5d023d3ef7d25a1e7fe25c805de781e7&show_border=true&link_opens_in_new_window=true"></iframe>
+            <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style={{width: '120px', height: '240px'}} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=londonparkour-21&language=en_GB&marketplace=amazon&region=GB&placement=B08PVD4Y33&asins=B08PVD4Y33&linkId=104d2b03fe933bc76dd288160495feba&show_border=true&link_opens_in_new_window=true"></iframe>
+            <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style={{width: '120px', height: '240px'}} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=londonparkour-21&language=en_GB&marketplace=amazon&region=GB&placement=B09MT2W356&asins=B09MT2W356&linkId=60a391aa306ae2dbfb259a3fb4d9cae1&show_border=false&link_opens_in_new_window=true"></iframe>
           </div>
         </div>
 
