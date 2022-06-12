@@ -148,7 +148,7 @@ class IndexPage extends React.Component {
     return (
       <main>
 
-        <Helmet>
+        <Helmet htmlAttributes={{ lang: 'en',}}>
           <meta charSet="utf-8" />
           <title>SVG Encoder</title>
           <link rel="canonical" href="http://svgencode.com" />
@@ -191,16 +191,16 @@ class IndexPage extends React.Component {
             <h3 className="col-span-4 text-xl text-blue-900 border-b-2 border-blue-900">URL-Encoding</h3>
 
               {/* URL Encoding without spaces */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="URL-Encoded" rows="3" content={this.state.svgUrlregexEncoded}>Spaces excluded.</DumbTextarea>
+              <DumbTextarea id="svgUrlregexEncoded" className="col-span-2 lg:col-span-1" label="URL-Encoded" rows="3" content={this.state.svgUrlregexEncoded}>Spaces excluded.</DumbTextarea>
 
               {/* CSS Inline URL-Encoded */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="URL-Encoded CSS " rows="3" content={this.state.svgCSSReadyInline}>background-image:url()</DumbTextarea>
+              <DumbTextarea id="svgCSSReadyInline" className="col-span-2 lg:col-span-1" label="URL-Encoded CSS " rows="3" content={this.state.svgCSSReadyInline}>background-image:url()</DumbTextarea>
 
               {/* HTML Image URL-Encoded */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="URL-Encoded <img>" rows="3" content={this.state.svgHTMLimg}> &#60;img src="" &#62; </DumbTextarea>
+              <DumbTextarea id="svgHTMLimg" className="col-span-2 lg:col-span-1" label="URL-Encoded <img>" rows="3" content={this.state.svgHTMLimg}> &#60;img src="" &#62; </DumbTextarea>
 
               {/* HTML Object URL-Encoded */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="URL-Encoded <object>" rows="3" content={this.state.svgHTMLobject}> &#60;object type="" data="" &#62; </DumbTextarea>
+              <DumbTextarea id="svgHTMLobject" className="col-span-2 lg:col-span-1" label="URL-Encoded <object>" rows="3" content={this.state.svgHTMLobject}> &#60;object type="" data="" &#62; </DumbTextarea>
 
 
 
@@ -211,16 +211,16 @@ class IndexPage extends React.Component {
             <h3 className="col-span-4 text-xl text-blue-900 border-b-2 border-blue-900">Base64 Encoded</h3>
 
               {/* Base64 Encoded */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="Base64 Encoded" rows="3" content={this.state.svgBase64Encoded}>Single-quotes and Whitespace removed</DumbTextarea>
+              <DumbTextarea id="svgBase64Encoded" className="col-span-2 lg:col-span-1" label="Base64 Encoded" rows="3" content={this.state.svgBase64Encoded}>Single-quotes and Whitespace removed</DumbTextarea>
 
               {/* CSS Inline Base64 */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="Base64 Encoded CSS" rows="3" content={this.state.svgCSSReadyInlineB64}>background-image:url()</DumbTextarea>
+              <DumbTextarea id="svgCSSReadyInlineB64" className="col-span-2 lg:col-span-1" label="Base64 Encoded CSS" rows="3" content={this.state.svgCSSReadyInlineB64}>background-image:url()</DumbTextarea>
 
               {/* HTML Image Base64-Encoded */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="Base64 Encoded <img>" rows="3" content={this.state.svgHTMLimgB64}> &#60;img src="" &#62; </DumbTextarea>
+              <DumbTextarea id="svgHTMLimgB64" className="col-span-2 lg:col-span-1" label="Base64 Encoded <img>" rows="3" content={this.state.svgHTMLimgB64}> &#60;img src="" &#62; </DumbTextarea>
               
               {/* HTML Object Base64-Encoded */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="Base64 Encoded <object>" rows="3" content={this.state.svgHTMLobjectB64}> &#60;object type="" data="" &#62; </DumbTextarea>
+              <DumbTextarea id="svgHTMLobjectB64" className="col-span-2 lg:col-span-1" label="Base64 Encoded <object>" rows="3" content={this.state.svgHTMLobjectB64}> &#60;object type="" data="" &#62; </DumbTextarea>
 
 
 
@@ -228,22 +228,22 @@ class IndexPage extends React.Component {
             <h3 className="col-span-4 text-xl text-blue-900 border-b-2 border-blue-900">Alterations</h3>
 
               {/* One-Liner */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="One-liner" rows="2" content={this.state.svgRawCodeOneLine}>Removed newlines and extra whitespace</DumbTextarea>
+              <DumbTextarea id="svgRawCodeOneLine" className="col-span-2 lg:col-span-1" label="One-liner" rows="2" content={this.state.svgRawCodeOneLine}>Removed newlines and extra whitespace</DumbTextarea>
 
               {/* Single Quotes */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="Single-Quotes" rows="2" content={this.state.svgRawSingleQuotes}>Convert all quotes to singles</DumbTextarea>
+              <DumbTextarea id="svgRawSingleQuotes" className="col-span-2 lg:col-span-1" label="Single-Quotes" rows="2" content={this.state.svgRawSingleQuotes}>Convert all quotes to singles</DumbTextarea>
 
               {/* Double Quotes */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="Double-Quotes" rows="2" content={this.state.svgRawDoubleQuotes}>Convert all quotes to doubles</DumbTextarea>
+              <DumbTextarea id="svgRawDoubleQuotes" className="col-span-2 lg:col-span-1" label="Double-Quotes" rows="2" content={this.state.svgRawDoubleQuotes}>Convert all quotes to doubles</DumbTextarea>
 
               {/* No Colour */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="No Colour" rows="2" content={this.state.svgRawCodeNoColour}>Removed All Fills and Strokes</DumbTextarea>
+              <DumbTextarea id="svgRawCodeNoColour" className="col-span-2 lg:col-span-1" label="No Colour" rows="2" content={this.state.svgRawCodeNoColour}>Removed All Fills and Strokes</DumbTextarea>
 
               {/* No Transforms */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="No Transforms" rows="2" content={this.state.svgRawCodeNoTransforms}>Removed All Transforms</DumbTextarea>
+              <DumbTextarea id="svgRawCodeNoTransforms" className="col-span-2 lg:col-span-1" label="No Transforms" rows="2" content={this.state.svgRawCodeNoTransforms}>Removed All Transforms</DumbTextarea>
 
               {/* No Groups */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="No Groups" rows="2" content={this.state.svgRawCodeNoGroups}>Removed All Groups</DumbTextarea>
+              <DumbTextarea id="svgRawCodeNoGroups" className="col-span-2 lg:col-span-1" label="No Groups" rows="2" content={this.state.svgRawCodeNoGroups}>Removed All Groups</DumbTextarea>
 
 
 
@@ -251,10 +251,10 @@ class IndexPage extends React.Component {
             <h3 className="col-span-4 text-xl text-blue-900 border-b-2 border-blue-900">Other Encodings</h3>
 
               {/* Encode using encodeURI() */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="Encode URI" rows="3" content={this.state.svgEncodedUri}>encodeURI(svg)</DumbTextarea>
+              <DumbTextarea id="svgEncodedUri" className="col-span-2 lg:col-span-1" label="Encode URI" rows="3" content={this.state.svgEncodedUri}>encodeURI(svg)</DumbTextarea>
 
               {/* Encode using encodeURIComponent() */}
-              <DumbTextarea className="col-span-2 lg:col-span-1" label="Encode-URI Component" rows="3" content={this.state.svgUrlComponentEncoded}>encodeURIComponent(svg)</DumbTextarea>
+              <DumbTextarea id="svgUrlComponentEncoded" className="col-span-2 lg:col-span-1" label="Encode-URI Component" rows="3" content={this.state.svgUrlComponentEncoded}>encodeURIComponent(svg)</DumbTextarea>
 
 
 
