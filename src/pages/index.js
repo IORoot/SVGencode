@@ -3,9 +3,10 @@ import DumbTextarea from "../components/DumbTextarea"
 import FormTextarea from "../components/FormTextarea"
 import SvgImage from '../components/SvgImage'
 import mixpanel from 'mixpanel-browser';
+import { Helmet } from "react-helmet"
 
 mixpanel.init('951229746a9235dd49749d8f6490ac83', {debug: true, ignore_dnt: true})
-mixpanel.track('Weebsite Visit')
+mixpanel.track('Website Visit')
 
 function removeNewlines(svg){
   return svg.replace(/(\r\n|\n|\r)/gm, " ");  // New lines
@@ -146,7 +147,15 @@ class IndexPage extends React.Component {
 
     return (
       <main>
-        <title>SVG Encoder</title>
+
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>SVG Encoder</title>
+          <link rel="canonical" href="http://svgencode.com" />
+          <meta name="description" content="SVG URI-Encoder and Base64 Converter Tool." />
+        </Helmet>
+
+        
         
         <div className="w-full flex flex-col lg:flex-row min-h-screen">
 
