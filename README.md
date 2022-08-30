@@ -34,7 +34,7 @@ Convert your SVG to common encodings for CSS & HTML.
 
 ##  2. <a name='AboutTheProject'></a>About The Project
 
-[https://SVGEncode.com](https://SVGEncode.com)
+[SVGEncode.com](https://SVGEncode.com)
 
 This is just a small little one-day project to learn gatsby with netlify. I'm always using yoksel's [https://yoksel.github.io/url-encoder/](https://yoksel.github.io/url-encoder/) project, but I sometimes need the result in a Base64 encoded format with a backgroung-image. 
 
